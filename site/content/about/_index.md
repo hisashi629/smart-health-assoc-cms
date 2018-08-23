@@ -21,6 +21,7 @@ directors:
     position: 理事
 contact:
   address: あとで
+  email: test@example.com
   fax: あとで
   phone: あとで
   staff: あとで
