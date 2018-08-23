@@ -1,5 +1,6 @@
 ---
-title: あとで
+title: SHCAについて
+image: /img/about.jpg
 purpose: >-
   これは活動目的です。これは活動目的です。これは活動目的です。これは活動目的です。これは活動目的です。
 
