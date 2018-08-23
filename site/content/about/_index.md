@@ -16,8 +16,12 @@ overview: あとで
 circumstances:
   - date: 2018年3月
     title: これは活動経緯です
+  - date: 2018年5月
+    title: 活動経緯その２です
 directors:
   - name: 健康　太郎
+    position: 代表理事
+  - name: 健康　次郎
     position: 理事
 contact:
   address: あとで
