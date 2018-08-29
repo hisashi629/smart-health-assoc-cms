@@ -1,7 +1,7 @@
 ---
 title: 賛助会員一覧
 image: /img/cooperation.jpg
-cooperation-member:
+cooperation-members:
   - banner: /img/omron-logo.jpg
     name: オムロンヘルスケア株式会社
     url: 'http://www.healthcare.omron.co.jp/'
