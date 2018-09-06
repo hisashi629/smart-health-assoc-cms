@@ -3,13 +3,32 @@
   <div class="mw6 center ph3 pv4">
     <h1 class="f2 lh-title b mb3">{{.Title}}</h1>
     <div class="flex justify-between grey-3">
-      <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
-      <p>Read in {{ .ReadingTime }} minutes</p>
+      <div>{{ .Date.Format "2006/01/02" }}</div>
+      <div class="inform-category {{ .Params.categories }}"></div>
     </div>
     <div class="cms mw6">
       <p>{{ .Description }}</p>
       {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
       {{ .Content }}
     </div>
+    {{ if .Params.dl_files }}
+    <ul class="dl_list">
+    {{ range .Params.dl_files }}
+      <li>{{ .name }}<button><a href="{{ .url }}" target="_blank">ダウンロード</a></button></li>
+    {{ end }}
+    </ul>
+    {{ end }}
+    {{ if .Params.images }}
+    <ul class="showcase">
+    {{ range .Params.images }}
+    <li>
+      <figure>
+      <img src="{{ .url }}">
+      <figcaption>{{ .name }}</figcaption>
+      </figure>
+    </li>
+    {{ end }}
+    </ul>
+    {{ end }}
   </div>
 {{ end }}

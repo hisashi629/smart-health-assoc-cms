@@ -14,56 +14,71 @@ export default class PostPreview extends React.Component {
     }
 
     return <div>
-        <Jumbotron image={image} title={entry.getIn(["data", "title"])} subtitle={entry.getIn(["data", "subtitle"])}/>
-
-        <div className="bg-grey-1 pv4">
-          <div className="flex-l mhn1-l ph3 center mw7">
-            <h2 className="f2 b lh-title mb2 w-40-l">{entry.getIn(["data", "blurb", "heading"])}</h2>
-            <p className="w-60-l mb0">{entry.getIn(["data", "blurb", "text"])}</p>
-          </div>
+        <Jumbotron image={image} title={entry.getIn(["data", "title"])}/>
+        <div class="main-message">
+          {entry.getIn(["data", "message"])}
         </div>
-
-        <div className="bg-off-white pv4">
-          <div className="ph3 mw7 center">
-            <h2 className="f2 b lh-title mb2">{entry.getIn(["data", "intro", "heading"])}</h2>
-            <p className="mb4 mw6">{entry.getIn(["data", "intro", "text"])}</p>
-
-            <div className="flex-ns mhn2-ns mb3">
-              {(entry.getIn(["data", "products"]) || []).map((product, i) => <div className="ph2-ns w-50-ns" key={i}>
-                <img src={getAsset(product.get("image"))} alt="" className="center db mb3" style={{width: "240px"}}/>
-                <p>{product.get("text")}</p>
-              </div>)}
-            </div>
-
-            <div className="tc">
-              <a href="#" className="btn raise">See all products</a>
-            </div>
-          </div>
+        <div class="col-xs-9">
+          <h2 class="content-header">お知らせ</h2>
+          <ul class="information">
+            <li>
+              <a href="#">
+                <ul class="inform-data">
+                  <li class="inform-date">2018/08/29</li>
+                  <li class="inform-category report"></li>
+                  <li class="inform-title">お知らせ１</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ul class="inform-data">
+                  <li class="inform-date">2018/08/28</li>
+                  <li class="inform-category event"></li>
+                  <li class="inform-title">お知らせ２</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ul class="inform-data">
+                  <li class="inform-date">2018/08/27</li>
+                  <li class="inform-category topic"></li>
+                  <li class="inform-title">お知らせ３</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ul class="inform-data">
+                  <li class="inform-date">2018/08/26</li>
+                <li class="inform-category notification"></li>
+                  <li class="inform-title">お知らせ４</li>
+                </ul>
+              </a>
+            </li>
+          </ul>
         </div>
-
-        <div className="bg-grey-1 pv4">
-          <div className="ph3 mw7 center">
-
-            <div className="flex-l mhn2-l">
-              <div className="w-40-l ph2-l">
-                <h2 className="f2 b lh-title mb2">{entry.getIn(["data", "values", "heading"])}</h2>
-
-                <p>{entry.getIn(["data", "values", "text"])}</p>
-              </div>
-
-              <div className="w-60-l ph2-l">
-                <img src="/img/home-about-section.jpg" alt="" className="mb3"/>
-              </div>
-            </div>
-
-            <div className="tc">
-              <a href="{{.buttonLink}}" className="btn raise">Read more</a>
-            </div>
-
-          </div>
-        </div>
-
-
-    </div>
+        <ul class="col-xs-3 side-banner-list">
+          <li class="side-banner phone-banner">
+            <dl>
+              <dt>お電話でのご質問・お問い合わせ</dt>
+              <dd>050-3509-7859</dd>
+            </dl>
+          </li>
+          <li class="side-banner general-banner">
+            <a href="/contact">お問い合わせ</a>
+          </li>
+          <li class="side-banner general-banner">
+            <a href="/">検体測定地図検索</a>
+          </li>
+          <li class="side-banner doc-dl-banner">
+            <a href="/">資料ダウンロード</a>
+          </li>
+          <li class="side-banner general-banner">
+            <a href="/register">新規会員登録</a>
+          </li>
+        </ul>
+       </div>
   }
 }

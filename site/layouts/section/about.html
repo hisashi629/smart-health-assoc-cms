@@ -1,0 +1,41 @@
+{{ define "main" }}
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
+<section class="markdown">
+    {{ .Content }}
+
+    <h2 class="content-header">活動経緯</h2>
+    <ul class="information content">
+        {{ range .Params.circumstances }}
+        <li class="circumstance-data">
+             {{ $date := findRE ".+?(年|月|$)" .date }}
+            <div class="circumstance-year">{{ index $date 0 }}</div>
+            <div class="circumstance-month">{{ index $date 1 }}</div>
+            <div class="circumstance-other">{{ index $date 2 }}</div>
+            <div class="circumstance-title">{{ .title }}</div>
+        </li>
+        {{ end }}
+    </ul>
+    <a href="/post" class="circumstance-more">2015年6月以降の活動状況は、お知らせページをご覧ください。</a>
+
+    <h2 class="content-header">理事</h2>
+    <ul class="information content">
+        {{ range .Params.directors }}
+        <li class="director-data">
+            <div class="director-position">{{ .position }}</div>
+            <div class="director-name">{{ .name }}</div>
+        </li>
+        {{ end }}
+    </ul>
+
+    <h2 class="content-header">連絡先</h2>
+    <ul class="information content">
+    {{ with .Params.contact }}
+    <li class="contact-data"><div class="contact-label">担当</div><div class="contact-value">{{ .staff }}</div></li>
+    <li class="contact-data"><div class="contact-label">住所</div><div class="contact-value">{{ .address }}</li>
+    <li class="contact-data"><div class="contact-label">TEL</div><div class="contact-value">{{ .phone }}</li>
+    <li class="contact-data"><div class="contact-label">FAX</div><div class="contact-value">{{ .fax }}</li>
+    <li class="contact-data"><div class="contact-label">e-mail</div><div class="contact-value"><a href="mailto:{{ .email }}">{{ .email }}</a></li>
+    {{ end }}
+    </ul>
+</section>
+{{ end }}

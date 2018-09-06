@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
+
+<ul class="cooperation-data information">
+{{ range .Params.cooperation_members }}
+    <li class="cooperation">
+    <a href="{{ .url }}">
+        <ul class="information">
+        <li class="cooperation-banner"><img src="{{ .banner }}" alt="{{ .name }}" /></li>
+        <li class="cooperation-name">{{ .name }}</li>
+        <li class="cooperation-url">{{ .url }}</li>
+        </ul>
+    </a>
+    </li>
+{{ end }}
+</div>
+{{ end }}

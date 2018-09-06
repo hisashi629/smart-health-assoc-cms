@@ -1,9 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   {{ partial "head" . }}
-  <body class="sans-serif">
-    {{ partial "nav" . }}
-    {{ block "main" . }}{{ end }} 
-    {{ partial "footer" . }} 
+  <body>
+    <div id="app">
+      {{ partial "nav" . }}
+      <div class="container">
+        <div class="row">
+            <div class="col-xs-12 main">
+              {{ block "main" . }}{{ end }}
+            </div>
+        </div>
+      </div>
+      {{ partial "footer" . }}
+      </div>
+    </div>
   </body>
 </html>

@@ -1,16 +1,23 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Latest stories") }}
-
-<div class="mw7 center">
-  <ul class="flex-ns flex-wrap mhn1-ns pa3">
-      {{ range (.Paginator 4).Pages.ByPublishDate }}
-          <div class="w-50-ns ph1-ns flex">
+{{ partial "jumbotron" (dict "imageUrl" "/img/newsList.jpg" "title" "協会からのお知らせ") }}
+<section class="col-xs-10">
+  <h2 class="content-header">お知らせ</h2>
+  <ul class="information big-list">
+      {{ range (.Paginator 10).Pages.ByPublishDate.Reverse }}
             {{ .Render "li"}}
-          </div>
       {{ end }}
   </ul>
   {{ partial "pagination" . }}
-</div>
-
+</section>
+<ul class="col-xs-2 categories-list">
+  <li class="categories-list-bg">
+    <a href="/post" class="categories-list-label all-categories"></a>
+  </li>
+  {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+  <li class="categories-list-bg">
+    <a href="{{ "categories/" | relLangURL }}{{ $name | urlize }}" class="categories-list-label {{ $name }}"></a>
+  </li>
+  {{ end }}
+</ul>
 {{end}}

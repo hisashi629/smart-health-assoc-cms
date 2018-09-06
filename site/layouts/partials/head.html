@@ -1,12 +1,13 @@
 <head>
-
-	<title>{{ .Title }} | Kaldi</title>
-	<link rel="stylesheet" href="/css/main.css" />
-
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=1080">
+	<meta name="robots" content="noindex">
 
+	<title>{{ .Title }}|一般社団法人スマートヘルスケア協会</title>
+	<link rel="canonical" href="{{ .Permalink }}">
+	<link rel="stylesheet" href="/css/app.css" />
+	<link rel="stylesheet" href="/css/main.css" />
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
 
 	<!-- Favicons -->
@@ -19,8 +20,8 @@
 
 	<!-- Open Graph -->
 	<meta property="og:type" content="business.business">
-	<meta property="og:title" content="Kaldi | Great coffee with a conscience">
-	<meta property="og:url" content="/">
+	<meta property="og:title" content="{{ .Title }}|一般社団法人スマートヘルスケア協会">
+	<meta property="og:url" content="{{ .Permalink }}">
 	<meta property="og:image" content="/img/og-image.jpg">
 
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>

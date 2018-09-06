@@ -1,87 +1,545 @@
-/*! TACHYONS v4.5.5 | http://tachyons.io */
+body,
+pre {
+    font-family: "メイリオ", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: 500;
+    height: 100%;
+    background-color: #ffffff;
+    word-break : break-all;
+}
 
-/*
- *
- *      ________            ______
- *      ___  __/_____ _________  /______  ______________________
- *      __  /  _  __ `/  ___/_  __ \_  / / /  __ \_  __ \_  ___/
- *      _  /   / /_/ // /__ _  / / /  /_/ // /_/ /  / / /(__  )
- *      /_/    \__,_/ \___/ /_/ /_/_\__, / \____//_/ /_//____/
- *                                 /____/
- *
- *    TABLE OF CONTENTS
- *
- *    1. External Library Includes
- *       - Reset.css | http://meyerweb.com/eric/tools/css/reset/
- *    2. Tachyons Modules
- *    3. Variables
- *       - Media Queries
- *       - Colors
- *    4. Debugging
- *       - Debug all
- *       - Debug children
- *
- */
+pre {
+    white-space: pre;          
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background-color: #fff;
+    border: 0;
+    padding: 0;
+    color: inherit;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+button > a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+button > a:hover {
+    text-decoration: none;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+    margin-bottom: 50px;
+}
+
+footer {
+    font-size: 12px;
+    font-weight: 800;
+    padding: 15px;
+    margin-top: auto;
+    background-color: #99c74c;
+    color: #fff;
+    height: 170px;
+}
+
+footer > dl > dt {
+    font-size: 140%;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer > dl > dd {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.copy-right {
+    text-align: center;
+    width: 100%;    
+    font-weight: normal;
+}
+
+.navbar-collapse {
+    border-color: #fff;
+}
+
+.logo {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+}
+
+.pagination {
+    margin: 0;
+    font-size: 120%;
+}
+
+.pagination > li:first-child > a {
+    border-radius: inherit;
+}
+
+.pagination > li:last-child > a {
+    border-radius: inherit;
+    margin: 0;
+}
+
+.pagination > li > a {
+    display: block;
+    color: #7ba92b;
+    border: 1px solid #7ba92b;
+    height: 40px;
+    min-width: 40px;
+    margin-right: 5px;
+}
+
+.pagination > .active > a,
+.pagination > li > a:hover {
+    background-color: #7ba92b;
+    border: 1px solid #7ba92b;
+    color: #fff;
+}
+
+.content-header::before,
+.markdown h2::before {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: #99c74c;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.content-header,
+.markdown h2 {
+    margin: 0;
+    font-size: 140%;
+    border-bottom: 1px solid #dddddd;
+    padding: 0 0 4px 10px;
+    position: relative;
+}
+
+.markdown h2:not(:first-child) {
+    margin-top: 50px;
+}
+
+.markdown h2 {
+    margin-bottom: 24px;
+}
+
+.markdown p {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.markdown ul {
+    margin-left: 10px;
+}
+
+.information {
+    list-style-type: none;
+    padding: 0;
+}
+
+.information > li > a {
+    display: block;
+    text-decoration: none;
+}
+
+.information > li > a:hover {
+    background-color: #f3f7e2;
+}
+
+.inform-data {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    color: #333;
+    font-size: 110%;
+    padding: 15px 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.inform-category {
+    display: block;
+    width: 60px;
+    margin: 2px 10px 2px 2px;
+    padding: 0 3px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+
+.all-categories {
+    background-color: #4dc6aa;
+}
+
+.all-categories::before {
+    content: "すべて";
+}
+
+.topic {
+    background-color: #c64d69;
+}
+
+.topic::before {
+    content: "トピック";
+}
+
+.event {
+    background-color: #99C74C;
+}
+
+.event::before {
+    content: "イベント";
+}
+
+.notification {
+    background-color: #4dc661;
+}
+
+.notification::before {
+    content: "通知";
+}
+
+.report {
+    background-color: #c6c24d;
+}
+
+.report::before {
+    content: "レポート";
+}
+
+.inform-date,
+.inform-category,
+.inform-title {
+    margin-right: 10px;
+}
+
+.inform-title {
+    overflow: hidden;
+    white-space: nowrap;
+    width: calc(100% - 200px);
+    text-overflow: ellipsis;
+}
+
+.big-list .inform-title {
+    width: calc(100% - 180px);
+}
 
 
-/* External Library Includes */
-@import './imports/_reset';
+.inform-btn::before {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border: 0px;
+  border-top: solid 2px #7ba92b;
+  border-right: solid 2px #7ba92b;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -4px;
+}
 
-/* Modules */
-@import './imports/_box-sizing';
-@import './imports/_images';
-@import './imports/_background-size';
-@import './imports/_background-position';
-@import './imports/_outlines';
-@import './imports/_borders';
-@import './imports/_border-radius';
-@import './imports/_border-style';
-@import './imports/_border-widths';
-@import './imports/_border-colors';
-@import './imports/_code';
-@import './imports/_coordinates';
-@import './imports/_clears';
-@import './imports/_display';
-@import './imports/_flexbox';
-@import './imports/_floats';
-@import './imports/_font-style';
-@import './imports/_font-weight';
-@import './imports/_forms';
-@import './imports/_heights';
-@import './imports/_line-height';
-@import './imports/_links';
-@import './imports/_lists';
-@import './imports/_max-widths';
-@import './imports/_widths';
-@import './imports/_overflow';
-@import './imports/_position';
-@import './imports/_opacity';
-@import './imports/_spacing';
-@import './imports/_text-decoration';
-@import './imports/_text-align';
-@import './imports/_text-transform';
-@import './imports/_type-scale';
-@import './imports/_typography';
-@import './imports/_utilities';
-@import './imports/_visibility';
-@import './imports/_white-space';
-@import './imports/_vertical-align';
-@import './imports/_states';
-@import './imports/_z-index';
-@import './imports/_styles';
-@import './imports/_buttons';
-@import './imports/_svg';
-@import './imports/_cms';
+.inform-btn {
+    display: inline-block;
+    border: 2px solid #7ba92b;
+    line-height: 44px;
+    text-align: center;
+    width: 180px;
+    font-size: 14px;
+    color: #7ba92b;
+    position: relative;
+    margin: 20px 0 30px 0;
+}
 
-/* Variables */
-/* Importing here will allow you to override any variables in the modules */
-@import './imports/_colors';
-@import './imports/_media-queries';
-@import './imports/_variables';
+.inform-btn:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #7ba92b;
+}
 
-/* Debugging */
-@import './imports/_debug-children';
-@import './imports/_debug-grid';
+.inform-btn:hover::before {
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+}
 
-/* Uncomment out the line below to help debug layout issues */
-/*@import './imports/_debug';*/
+.main-message {
+    font-size: 160%;
+    padding: 30px;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.side-banner-list {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.side-banner {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 46px;
+    margin-bottom: 10px;
+}
+
+.general-banner {
+    border-radius: 4px;
+    border: 5px double #99c74c;
+    color: #7ba92b;
+}
+
+.doc-dl-banner {
+    border-radius: 4px;
+    border: 5px solid #ec7c2e;
+    background-color: #333;
+    border: 0;
+    color: #fff;
+}
+
+.doc-dl-banner > a {
+    display: block;
+    border-radius: 4px;
+    background-color: #ec7c2e;
+    text-decoration: none;
+    color: #fff;
+}
+
+.doc-dl-banner > a:hover {
+    text-decoration: none;
+    opacity: .8;
+}
+
+.phone-banner {
+    border: 5px solid #efefef;
+    margin-bottom: 5px;
+}
+
+.phone-banner > dl {
+    margin: 0;
+    padding: 10px;
+}
+
+.phone-banner > dl > dt {
+    font-size: 90%;
+    color: #333;
+    font-weight: normal;
+}
+
+.phone-banner > dl > dd {
+    font-size: 120%;
+    color: #7ba92b;
+    font-weight: bold;
+}
+
+.general-banner > a {
+    display: block;
+    color: #7ba92b;
+}
+
+.general-banner:hover {
+    border: 5px solid #7ba92b;
+}
+
+.general-banner > a:hover {
+    background-color: #7ba92b;
+    color: #fff;
+}
+
+.circumstance-data,
+.director-data,
+.contact-data {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+
+.circumstance-year {
+    width: 55px;
+}
+
+.circumstance-month {
+    width: 35px;
+    text-align: right;
+}
+
+.circumstance-other {
+    width: 30px;
+    text-align: left;
+}
+
+.circumstance-title {
+    width: 100%;
+}
+
+.circumstance-more {
+    font-size: 90%;
+    color: #3097d1;
+    opacity: .6;
+}
+
+.director-position {
+    width: 80px;
+}
+
+.director-name {
+    width: 100%;
+}
+
+.contact-label {
+    width: 80px;
+}
+
+.contact-label {
+    width: 80px;
+}
+
+.contact-value {
+    width: 100%;
+}
+
+.categories-list {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.categories-list-label {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.categories-list-bg {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.categories-list-label:hover {
+    color: #fff;
+    text-decoration: none;
+    opacity: .8;
+}
+
+.big-list {
+    min-height: 18vh;
+}
+
+.cooperation-data {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.cooperation {
+    border: 1px solid #ddd;
+    width: 32.4%;
+    height: 200px;
+    margin: 0 1vw 1vw 0;
+}
+
+.cooperation > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.cooperation  ul {
+    margin: 1vw;
+}
+
+.cooperation-banner {
+    height: 80px;
+}
+
+.cooperation-banner > img {
+    width: 100%;
+    height: auto;
+}
+
+.cooperation-name {
+    color: #1caa3a;
+    font-size: 120%;
+
+}
+
+.cooperation > a:hover {
+    background-color: #fff !important;
+    border: 1px solid #7ba92b;
+    color: initial;
+    opacity: .8;
+}
+
+.cooperation-data .cooperation:nth-child(3n) {
+    margin-right: 0;
+}
+
+ul.dl_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 50px 0;
+}
+
+ul.dl_list > li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.dl_list button {
+    display: block;
+    padding: 2px 5px;
+    font-size: 80%;
+    background-color: #ec7c2e;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.dl_list button:hover {
+    opacity: .8;
+}
+
+.dl_list a {
+    color: #fff;
+}
+
+ul.showcase {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 50px 0;
+}
+
+.showcase img {
+    width: 250px;
+}
+
+.showcase figcaption {
+    text-align: center;
+}
