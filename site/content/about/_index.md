@@ -7,16 +7,24 @@ circumstances:
   - date: 2018年5月
     title: 活動経緯その２です
 directors:
-  - name: 健康　太郎
+  - name: 岡﨑　光洋
     position: 代表理事
-  - name: 健康　次郎
+  - name: 赤羽根　秀宜
+    position: 理事
+  - name: 首藤　徹
+    position: 理事
+  - name: 高市　和之
+    position: 理事
+  - name: 野本　禎
+    position: 理事
+  - name: 平井　みどり
     position: 理事
 contact:
-  address: あとで
-  email: test@example.com
-  fax: あとで
-  phone: あとで
-  staff: あとで
+  address: 〒110-0005　東京都台東区上野3-7-3　SDビル2階
+  email: office@shca.or.jp
+  fax: 03-5539-3528
+  phone: 050-3509-7859
+  staff: 首藤、遠山
 ---
 ## 活動目的
 
