@@ -2,10 +2,12 @@
 title: SHCAについて
 image: /img/about.jpg
 circumstances:
-  - date: 2018年3月
-    title: これは活動経緯です
-  - date: 2018年5月
-    title: 活動経緯その２です
+  - date: 2012年7月
+    title: 札幌市西区 健康フェア 実施支援
+  - date: 2012年10月
+    title: 経済産業省助成金事業開始（事業期間　2012年10月〜2013年2月）
+  - date: 2012年10月
+    title: 「健康チェックステーション具現化コンソーシアム」設立
 directors:
   - name: 岡﨑　光洋
     position: 代表理事
