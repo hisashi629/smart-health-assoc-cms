@@ -8,10 +8,10 @@ cooperation_members:
   - banner: /img/selmesta-logo.jpg
     name: 株式会社セルメスタ
     url: 'http://www.selmesta.com/'
-  - banner: /img/nihonkenpo-logo.gif
+  - banner: ''
     name: 日本健保株式会社
     url: 'http://www.nihonkenpo.jp/'
-  - banner: /img/miruws-logo.png
+  - banner: ''
     name: 株式会社ミルウス
     url: 'http://www.miruws.com/'
   - banner: /img/rdkk-logo.jpg
