@@ -1,0 +1,5 @@
+http://www.shca.or.jp/app/*  http://app.shca.or.jp/:splat  301!
+https://www.shca.or.jp/app/*  https://app.shca.or.jp/:splat  301!
+
+http://cms.shca.or.jp/app/*  http://app.shca.or.jp/:splat  301!
+https://cms.shca.or.jp/app/*  https://app.shca.or.jp/:splat  301!
