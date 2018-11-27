@@ -46,12 +46,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: タイトル, name: title, widget: string}
           - {label: カバー画像, name: image, widget: image}
           - {label: メッセージ, name: message, widget: string}
-      - file: "site/content/contact/_index.md"
-        label: "Contact Page"
-        name: "contact"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
       - file: "site/content/about/_index.md"
         label: "About Page"
         name: "about"
