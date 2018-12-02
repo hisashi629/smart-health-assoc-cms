@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="/css/app.css" />
 	<link rel="stylesheet" href="/css/main.css" />
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+	integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 
 	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
@@ -25,10 +27,26 @@
 	<meta property="og:image" content="/img/og-image.jpg">
 
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js" integrity="sha256-9Nt2r+tJnSd2A2CRUvnjgsD+ES1ExvjbjBNqidm9doI="
 	 crossorigin="anonymous"></script>
+
 	 <script type="text/javascript">
 		const isLogin = Cookies.get('isLogin');
-		console.log(`ログイン：${isLogin}`);
+
+		if (isLogin === undefined) {
+			$(window).on('load', () => {
+				$('.auth').hide();
+				$('.guest').show();
+			});
+		}
+
+		if (isLogin !== undefined) {
+			$(window).on('load', () => {
+				$('.auth').show();
+				$('.guest').hide();
+			});
+		}
 	</script>
 </head>

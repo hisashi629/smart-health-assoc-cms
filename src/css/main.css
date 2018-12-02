@@ -368,6 +368,28 @@ footer > dl > dd {
     color: #fff;
 }
 
+.login-box {
+    padding: 20px;
+    background-color: #f3f7e2;
+    text-align: center;
+}
+
+.login-box button {
+    color: #fff;
+    background-color: #99c74c;
+    width: 180px;
+    padding: 10px;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.login-box button:after {
+    content: "\f090";
+    font-family: FontAwesome;
+    margin-left: 10px;
+}
+
+
 .circumstance-data,
 .director-data,
 .contact-data {
