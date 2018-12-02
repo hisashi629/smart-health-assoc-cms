@@ -25,4 +25,10 @@
 	<meta property="og:image" content="/img/og-image.jpg">
 
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js" integrity="sha256-9Nt2r+tJnSd2A2CRUvnjgsD+ES1ExvjbjBNqidm9doI="
+	 crossorigin="anonymous"></script>
+	 <script type="text/javascript">
+		const isLogin = Cookies.get('isLogin');
+		console.log(`ログイン：${isLogin}`);
+	</script>
 </head>
