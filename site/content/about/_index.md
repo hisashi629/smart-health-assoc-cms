@@ -29,20 +29,20 @@ directors:
     position: 代表理事
   - name: 赤羽根　秀宜
     position: 理事
-  - name: 首藤　徹
-    position: 理事
   - name: 高市　和之
     position: 理事
-  - name: 野本　禎
-    position: 理事
   - name: 平井　みどり
+    position: 理事
+  - name: 高橋　寛
+    position: 理事
+  - name: 竹中　孝行
     position: 理事
 contact:
   address: 〒110-0005　東京都台東区上野3-7-3　SDビル2階
   email: office@shca.or.jp
   fax: 03-5539-3528
   phone: 050-3509-7859
-  staff: 首藤、遠山
+  staff: 首藤
 ---
 ## 活動目的
 
