@@ -232,6 +232,11 @@ footer > dl > dd {
     margin-right: 10px;
 }
 
+.inform-date {
+    font-size: 13px;
+    margin-top: 3px;
+}
+
 .inform-title {
     overflow: hidden;
     white-space: nowrap;
