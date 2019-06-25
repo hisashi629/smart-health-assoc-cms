@@ -28,6 +28,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
         - {label: 画像キャプション, name: caption, widget: string}
         - {label: URL, name: url, widget: image}
+        - {label: 幅指定, name: width, widget: string}
       - label: "ダウンロードファイル"
         name: "dl_files"
         widget: "list"

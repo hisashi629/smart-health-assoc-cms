@@ -28,7 +28,7 @@ export default class PostPreview extends React.Component {
         {images && images.map((value, index) => (
           <li key={index.toString()}>
             <figure>
-              <img src={value.get('url')}></img>
+              <img src={value.get('url')} style={{ "max-width": value.get('width') ? value.get('width') + "px" : '' }}></img>
               <figcaption>{value.get('caption')}</figcaption>
             </figure>
           </li>

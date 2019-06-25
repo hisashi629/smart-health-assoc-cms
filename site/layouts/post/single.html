@@ -23,7 +23,12 @@
     {{ range .Params.images }}
     <li>
       <figure>
+      {{ if .width }}
+      <img src="{{ .url }}" style="max-width: {{ .width }}px;">
+      {{ else }}
       <img src="{{ .url }}">
+      {{ end }}
+
       <figcaption>{{ .caption }}</figcaption>
       </figure>
     </li>
