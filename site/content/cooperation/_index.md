@@ -20,8 +20,5 @@ cooperation_members:
   - banner: /img/abbott-logo-horiz3.jpg
     name: アリーアメディカル株式会社
     url: 'https://www.alere.com/jp/index/about/about-alere-medical-co--ltd-0.html'
-  - banner: /img/abbott-logo-horiz4.jpg
-    name: アリーアメディカル株式会社
-    url: 'https://www.alere.com/jp/index/about/about-alere-medical-co--ltd-0.html'
 ---
 
