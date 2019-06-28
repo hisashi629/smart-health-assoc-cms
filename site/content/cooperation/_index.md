@@ -17,7 +17,7 @@ cooperation_members:
   - banner: /img/rdkk-logo.jpg
     name: ロシュ・ダイアグノスティックス株式会社
     url: 'http://www.roche-diagnostics.jp/'
-  - banner: /img/logo_abbott.jpg
+  - banner: /img/abbott-logo-horiz.jpg
     name: アリーアメディカル株式会社
     url: 'https://www.alere.com/jp/index/about/about-alere-medical-co--ltd-0.html'
 ---
