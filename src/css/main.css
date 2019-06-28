@@ -502,6 +502,7 @@ footer > dl > dd {
 
 .cooperation-banner {
     height: 80px;
+    text-align:center;
 }
 
 .cooperation-banner > img {
@@ -512,7 +513,7 @@ footer > dl > dd {
 .cooperation-name {
     color: #1caa3a;
     font-size: 120%;
-
+    margin-top: 10px;
 }
 
 .cooperation > a:hover {
