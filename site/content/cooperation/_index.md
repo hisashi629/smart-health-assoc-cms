@@ -20,5 +20,8 @@ cooperation_members:
   - banner: /img/abbott-logo-horiz3.jpg
     name: アリーアメディカル株式会社
     url: 'https://www.alere.com/jp/index/about/about-alere-medical-co--ltd-0.html'
+  - banner: /img/logo_pharumo.jpg
+    name: 株式会社ファルモ
+    url: 'https://hp.pharumo.com/'
 ---
 
