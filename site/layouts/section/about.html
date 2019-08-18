@@ -3,6 +3,7 @@
 <section class="markdown">
     {{ .Content }}
 
+    {{ if .Params.circumstances }}
     <h2 class="content-header">活動経緯</h2>
     <ul class="information content">
         {{ range .Params.circumstances }}
@@ -16,7 +17,9 @@
         {{ end }}
     </ul>
     <a href="/post" class="circumstance-more">2015年6月以降の活動状況は、お知らせページをご覧ください。</a>
+    {{ end }}
 
+    {{ if .Params.directors }}
     <h2 class="content-header">理事</h2>
     <ul class="information content">
         {{ range .Params.directors }}
@@ -26,7 +29,9 @@
         </li>
         {{ end }}
     </ul>
+    {{ end }}
 
+    {{ if .Params.contact }}
     <h2 class="content-header">連絡先</h2>
     <ul class="information content">
     {{ with .Params.contact }}
@@ -37,5 +42,6 @@
     <li class="contact-data"><div class="contact-label">e-mail</div><div class="contact-value"><a href="mailto:{{ .email }}">{{ .email }}</a></li>
     {{ end }}
     </ul>
+    {{ end }}
 </section>
 {{ end }}
