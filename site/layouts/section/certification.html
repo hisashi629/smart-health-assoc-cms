@@ -1,0 +1,6 @@
+{{ define "main" }}
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
+<section class="markdown">
+    {{ .Content }}
+</section>
+{{ end }}
