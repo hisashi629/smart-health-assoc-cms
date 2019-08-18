@@ -88,3 +88,58 @@ collections: # A list of collections the CMS should be able to edit
               - {label: 企業名, name: name, widget: string}
               - {label: バナー, name: banner, widget: image}
               - {label: URL, name: url, widget: string}
+  - name: "about"
+    label: "About"
+    files:
+      - file: "site/content/about/org/_index.md"
+        label: "組織について"
+        name: "組織"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: 組織図, name: map, widget: image, required: false}
+          - {label: 理事会, name: board, widget: image, required: false}
+          - label: シニアアドバイザー
+            name: senior-advisors
+            widget: list
+            fields:
+              - {label: 名前, name: name, widget: string}
+            required: false
+          - label: 事務局
+            name: contact
+            widget: object
+            fields:
+              - {label: 担当, name: staff, widget: string}
+              - {label: 住所, name: address, widget: string}
+              - {label: 電話番号, name: phone, widget: string}
+              - {label: FAX, name: fax, widget: string}
+              - {label: e-mail, name: email, widget: string}
+            required: false
+          - {label: "内容", name: "body", widget: "markdown", buttons: ["heading-two", "bold", "italic", "link", "bulleted-list", "numbered-list"]}
+      - file: "site/content/about/member/_index.md"
+        label: "会員について"
+        name: "about_member"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: "内容", name: "body", widget: "markdown", buttons: ["heading-two", "bold", "italic", "link", "bulleted-list", "numbered-list"]}
+  - name: "certification"
+    label: "Certification"
+    files:
+      - file: "site/content/certification/_index.md"
+        label: "認証制度について"
+        name: "certification"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: "内容", name: "body", widget: "markdown", buttons: ["heading-two", "bold", "italic", "link", "bulleted-list", "numbered-list"]}
+
+      - file: "site/content/certification/system/_index.md"
+        label: "研修会について"
+        name: "certification_system"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: "内容", name: "body", widget: "markdown", buttons: ["heading-two", "bold", "italic", "link", "bulleted-list", "numbered-list"]}
+      - file: "site/content/certification/rule/_index.md"
+        label: "規約について"
+        name: "certification_rule"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: "内容", name: "body", widget: "markdown", buttons: ["heading-two", "bold", "italic", "link", "bulleted-list", "numbered-list"]}
