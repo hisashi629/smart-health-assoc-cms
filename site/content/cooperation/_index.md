@@ -18,7 +18,7 @@ cooperation_members:
     name: ロシュ・ダイアグノスティックス株式会社
     url: 'http://www.roche-diagnostics.jp/'
   - banner: /img/abbott-logo-horiz3.jpg
-    name: アリーアメディカル株式会社
+    name: アボットダイアグノスティックスメディカル株式会社
     url: 'https://www.alere.com/jp/index/about/about-alere-medical-co--ltd-0.html'
   - banner: /img/logo_pharumo.jpg
     name: 株式会社ファルモ
