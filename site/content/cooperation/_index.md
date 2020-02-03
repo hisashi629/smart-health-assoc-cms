@@ -23,5 +23,19 @@ cooperation_members:
   - banner: /img/logo_pharumo.jpg
     name: 株式会社ファルモ
     url: 'https://hp.pharumo.com/'
+  - name: シミックヘルスケア株式会社
+    url: 'https://www.cmic-healthcare.co.jp/'
+  - {}
+  - {}
+  - {}
+  - {}
+  - {}
+  - {}
+  - {}
+  - {}
+  - {}
+  - {}
+  - {}
+  - {}
 ---
 
