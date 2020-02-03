@@ -26,17 +26,5 @@ cooperation_members:
   - banner: /img/シミックロゴ.png
     name: シミックヘルスケア株式会社
     url: 'https://www.cmic-healthcare.co.jp/'
-  - {}
-  - {}
-  - {}
-  - {}
-  - {}
-  - {}
-  - {}
-  - {}
-  - {}
-  - {}
-  - {}
-  - {}
 ---
 
