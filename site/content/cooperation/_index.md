@@ -11,9 +11,6 @@ cooperation_members:
   - banner: /img/nihonkenpo-logo.gif
     name: 日本健保株式会社
     url: 'http://www.nihonkenpo.jp/'
-  - banner: /img/miruus_logo-hp.jpg
-    name: 株式会社ミルウス
-    url: 'http://www.miruws.com/'
   - banner: /img/rdkk-logo.jpg
     name: ロシュ・ダイアグノスティックス株式会社
     url: 'http://www.roche-diagnostics.jp/'
@@ -26,5 +23,8 @@ cooperation_members:
   - banner: /img/シミックロゴ.png
     name: シミックヘルスケア・インスティテュート株式会社
     url: 'https://www.cmic-healthcare.co.jp/'
+  - banner: /img/logo.gif
+    name: 東日本メディコム株式会社
+    url: 'https://www.e-medicom.co.jp/'
 ---
 
