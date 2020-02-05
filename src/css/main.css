@@ -486,7 +486,6 @@ footer > dl > dd {
 .cooperation {
     border: 1px solid #ddd;
     width: 32.4%;
-    height: 200px;
     margin: 0 1vw 1vw 0;
 }
 
@@ -512,13 +511,13 @@ footer > dl > dd {
 
 .cooperation-name {
     color: #1caa3a;
-    font-size: 120%;
-    margin-top: 10px;
+    font-size: 100%;
+    margin-bottom: 10px;
 }
 
 .cooperation > a:hover {
     background-color: #fff !important;
-    border: 1px solid #7ba92b;
+    border: 2px solid #7ba92b;
     color: initial;
     opacity: .8;
 }
