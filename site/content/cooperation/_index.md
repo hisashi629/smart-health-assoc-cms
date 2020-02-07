@@ -23,7 +23,7 @@ cooperation_members:
   - banner: /img/シミックロゴ.png
     name: シミックヘルスケア・インスティテュート株式会社
     url: 'https://www.cmic-healthcare.co.jp/'
-  - banner: /img/logo.gif
+  - banner: /img/社標4.bmp
     name: 東日本メディコム株式会社
     url: 'https://www.e-medicom.co.jp/'
 ---
