@@ -42,7 +42,7 @@ contact:
   email: office@shca.or.jp
   fax: 03-5539-3528
   phone: 050-3509-7859
-  staff: 首藤
+  staff: 首藤　徹
 ---
 ## 活動目的
 
