@@ -26,7 +26,7 @@ cooperation_members:
   - banner: /img/社標4.bmp
     name: 東日本メディコム株式会社
     url: 'https://www.e-medicom.co.jp/'
-  - banner: /img/logo11-1.jpg
+  - banner: /img/logo11-2.jpg
     name: 日医工株式会社
     url: 'https://www.nichiiko.co.jp/'
 ---
