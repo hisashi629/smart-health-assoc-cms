@@ -19,7 +19,7 @@ cooperation_members:
     url: 'https://www.alere.com/jp/index/about/about-alere-medical-co--ltd-0.html'
   - banner: /img/logo_pharumo.jpg
     name: 株式会社ファルモ
-    url: 'https://hp.pharumo.com/'
+    url: 'https://pharumo.jp/'
   - banner: /img/社標4.bmp
     name: 東日本メディコム株式会社
     url: 'https://www.e-medicom.co.jp/'
