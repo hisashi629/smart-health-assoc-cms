@@ -88,6 +88,19 @@ collections: # A list of collections the CMS should be able to edit
               - {label: 企業名, name: name, widget: string}
               - {label: バナー, name: banner, widget: image}
               - {label: URL, name: url, widget: string}
+      - file: "site/content/tool/_index.md"
+        label: "Tool Page"
+        name: "tool"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image, required: false}
+          - label: ツール群
+            name: tools
+            widget: list
+            fields:
+              - {label: ツール名, name: name, widget: string}
+              - {label: バナー, name: banner, widget: image}
+              - {label: "内容", name: "body", widget: "markdown", buttons: ["heading-two", "bold", "italic", "link", "bulleted-list", "numbered-list"]}
   - name: "about"
     label: "About"
     files:

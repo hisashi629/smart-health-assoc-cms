@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
+
+<ul class="tool-data information">
+{{ range .Params.tools }}
+    <li class="tool">
+    <a href="{{ .url }}">
+        <ul class="information">
+            <li class="tool-name">{{ .name }}</li>
+            <li class="tooln-banner"><img src="{{ .banner }}" alt="{{ .name }}" /></li>
+            <li class="tool-body"></li>
+        </ul>
+    </a>
+    </li>
+{{ end }}
+</div>
+{{ end }}
