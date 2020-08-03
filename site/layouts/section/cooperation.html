@@ -1,6 +1,5 @@
 {{ define "main" }}
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
-
+{{ partial "jumbotron-text" (dict "title" .Title) }}
 <ul class="cooperation-data information">
 {{ range .Params.cooperation_members }}
     <li class="cooperation">
@@ -12,5 +11,5 @@
     </a>
     </li>
 {{ end }}
-</div>
+</ul>
 {{ end }}

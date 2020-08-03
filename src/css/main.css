@@ -8,13 +8,18 @@ pre {
 }
 
 pre {
-    white-space: pre;          
+    white-space: pre;
     white-space: pre-wrap;
     word-wrap: break-word;
     background-color: #fff;
     border: 0;
     padding: 0;
     color: inherit;
+}
+
+h1 {
+    margin-bottom: 4rem;
+    font-size: 3rem;
 }
 
 section {

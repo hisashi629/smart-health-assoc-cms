@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
+{{ partial "jumbotron-text" (dict "title" .Title) }}
 <section class="markdown">
     {{ .Content }}
 
