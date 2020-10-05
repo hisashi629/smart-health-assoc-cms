@@ -1,11 +1,9 @@
 ---
 title: 賛助会員一覧
-description: >-
+description: |-
   当協会の趣旨にご賛同の上、賛助を目的にご入会いただいた企業及び団体の皆様の一覧です。
 
-
-  会員となっていただいた方の特典については、「[会員種別（賛助会員）](https://www.shca.or.jp/about/member/)」をご覧ください。
-
+  会員となっていただいた方の特典については、「[会員種別（賛助会員）](/about/member/#賛助会員)」をご覧ください。
 
   賛助会員に関するお問合せは[コチラ](https://app.shca.or.jp/contact/)
 cooperation_members:
