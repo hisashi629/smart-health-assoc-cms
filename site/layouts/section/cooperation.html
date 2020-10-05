@@ -1,6 +1,8 @@
 {{ define "main" }}
 {{ partial "jumbotron-text" (dict "title" .Title) }}
+<section class="markdown">
 {{ .Description }}
+</section>
 <ul class="cooperation-data information">
 {{ range .Params.cooperation_members }}
     <li class="cooperation">
