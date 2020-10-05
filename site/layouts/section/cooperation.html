@@ -1,8 +1,8 @@
 {{ define "main" }}
 {{ partial "jumbotron-text" (dict "title" .Title) }}
-<section class="markdown">
-{{ .Description }}
-</section>
+<p>
+    当協会の趣旨にご賛同の上、賛助を目的にご入会いただいた企業及び団体の皆様の一覧です。 会員となっていただいた方の特典については、「<a href="/about/member/#賛助会員">会員種別（賛助会員）</a>」をご覧ください。 賛助会員に関するお問合せは<a href="https://app.shca.or.jp/contact/">コチラ</a></p>
+</p>
 <ul class="cooperation-data information">
 {{ range .Params.cooperation_members }}
     <li class="cooperation">

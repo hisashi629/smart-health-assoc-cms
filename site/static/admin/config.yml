@@ -45,7 +45,6 @@ collections: # A list of collections the CMS should be able to edit
         name: "home"
         fields:
           - {label: タイトル, name: title, widget: string}
-          - {label: カバー画像, name: image, widget: image}
           - {label: メッセージ, name: message, widget: string}
       - file: "site/content/about/_index.md"
         label: "About Page"
@@ -80,7 +79,6 @@ collections: # A list of collections the CMS should be able to edit
         name: "cooperation"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: "説明", name: "description", widget: "markdown", buttons: ["heading-two",  "bold", "italic", "link", "bulleted-list", "numbered-list"]}
           - label: 会員企業
             name: cooperation_members
             widget: list
@@ -93,7 +91,6 @@ collections: # A list of collections the CMS should be able to edit
         name: "tool"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image, required: false}
           - {label: "内容", name: "body", widget: "markdown", buttons: ["heading-two", "bold", "italic", "link", "bulleted-list", "numbered-list"]}
   - name: "about"
     label: "About"
