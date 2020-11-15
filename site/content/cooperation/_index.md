@@ -1,11 +1,5 @@
 ---
 title: 賛助会員一覧
-description: |-
-  当協会の趣旨にご賛同の上、賛助を目的にご入会いただいた企業及び団体の皆様の一覧です。
-
-  会員となっていただいた方の特典については、「[会員種別（賛助会員）](/about/member/#賛助会員)」をご覧ください。
-
-  賛助会員に関するお問合せは[コチラ](https://app.shca.or.jp/contact/)
 cooperation_members:
   - banner: /img/omron-logo.jpg
     name: オムロンヘルスケア株式会社
@@ -31,5 +25,8 @@ cooperation_members:
   - banner: /img/logo11-2.jpg
     name: 日医工株式会社
     url: 'https://www.nichiiko.co.jp/'
+  - banner: /img/krc_rogo_201115.png
+    name: 健工総合研究所
+    url: 'http://www.kenko-research.com/'
 ---
 
