@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{ partial "jumbotron-text" (dict "title" .Title) }}
+<div id="top"></div>
 <ul class="content-nav">
     <li><a href="#研修会の目的">研修会の目的</a></li>
     <li><a href="#当協会が提供する研修会">当協会が提供する研修会</a></li>
@@ -9,4 +10,7 @@
 <section class="markdown">
     {{ .Content }}
 </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jump.js/1.0.2/jump.min.js" integrity="sha512-Q9CUUoQ/LaD+X7jk76kM6swUEc8q0YPGBcH/Lflux+JatH8zIZPkIb0b91NW5ASgy9ENLhTzt2Z/zZ6yyake2w==" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<div id="page_top" onclick="Jump('#top')"></div>
 {{ end }}
