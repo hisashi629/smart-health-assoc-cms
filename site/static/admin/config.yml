@@ -134,16 +134,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: "内容", name: "body", widget: "markdown", buttons: ["heading-two", "bold", "italic", "link", "bulleted-list", "numbered-list"]}
-
-      - file: "site/content/certification/system/_index.md"
+  - name: "workshop"
+    label: "Workshop"
+    files:
+      - file: "site/content/workshop/_index.md"
         label: "研修会について"
-        name: "certification_system"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: "内容", name: "body", widget: "markdown", buttons: ["heading-two", "bold", "italic", "link", "bulleted-list", "numbered-list"]}
-      - file: "site/content/certification/rule/_index.md"
-        label: "規約について"
-        name: "certification_rule"
+        name: "workshop"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: "内容", name: "body", widget: "markdown", buttons: ["heading-two", "bold", "italic", "link", "bulleted-list", "numbered-list"]}

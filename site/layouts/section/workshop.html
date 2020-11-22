@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{ partial "jumbotron-text" (dict "title" .Title) }}
+<ul class="content-nav">
+    <li><a href="#研修会の目的">研修会の目的</a></li>
+    <li><a href="#規約">規約</a></li>
+    <li><a href="#よくある質問">よくある質問</a></li>
+</ul>
+<section class="markdown">
+    {{ .Content }}
+</section>
+{{ end }}

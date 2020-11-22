@@ -5,6 +5,7 @@ import HomePreview from "./cms-preview-templates/home";
 import PostPreview from "./cms-preview-templates/post";
 import ContactPreview from "./cms-preview-templates/contact";
 import CertificationPreview from "./cms-preview-templates/certification";
+import WorkshopPreview from "./cms-preview-templates/workshop";
 import AboutPreview from "./cms-preview-templates/about";
 
 // Example of creating a custom color widget
@@ -25,7 +26,6 @@ CMS.registerPreviewTemplate("post", PostPreview);
 CMS.registerPreviewTemplate("contact", ContactPreview);
 CMS.registerPreviewTemplate("about_member", AboutPreview);
 CMS.registerPreviewTemplate("certification", CertificationPreview);
-CMS.registerPreviewTemplate("certification_system", CertificationPreview);
-CMS.registerPreviewTemplate("certification_rule", CertificationPreview);
+CMS.registerPreviewTemplate("workshop", WorkshopPreview);
 
 CMS.registerWidget("color", ColorControl);
