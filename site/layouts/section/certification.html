@@ -1,5 +1,12 @@
 {{ define "main" }}
 {{ partial "jumbotron-text" (dict "title" .Title) }}
+<ul class="content-nav">
+    <li><a href="#認証制度の目的">認証制度の目的</a></li>
+    <li><a href="#健康応援スポットとは">健康応援スポットとは</a></li>
+    <li><a href="#規約">規約</a></li>
+    <li><a href="#よくある質問">よくある質問</a></li>
+    <li><a href="/workshop">研修会について</a></li>
+</ul>
 <section class="markdown">
     {{ .Content }}
 </section>

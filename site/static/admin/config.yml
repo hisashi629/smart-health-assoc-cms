@@ -103,7 +103,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: 組織図, name: map, widget: image, required: false}
           - {label: 理事会, name: board, widget: image, required: false}
           - label: シニアアドバイザー
-            name: senior-advisors
+            name: advisors
             widget: list
             fields:
               - {label: 名前, name: name, widget: string}

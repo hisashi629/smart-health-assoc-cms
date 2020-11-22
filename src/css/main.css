@@ -598,3 +598,14 @@ ul.showcase {
 .showcase figcaption {
     text-align: center;
 }
+
+.content-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+.content-nav > li {
+    padding: 0 8px;
+}

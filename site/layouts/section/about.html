@@ -31,6 +31,17 @@
     </ul>
     {{ end }}
 
+    {{ if .Params.advisors }}
+    <h2 class="content-header">シニアアドバイザー</h2>
+    <ul class="information content">
+        {{ range .Params.advisors }}
+        <li class="director-data">
+            <div class="director-name">{{ .name }}</div>
+        </li>
+        {{ end }}
+    </ul>
+    {{ end }}
+
     {{ if .Params.contact }}
     <h2 class="content-header">連絡先</h2>
     <ul class="information content">
