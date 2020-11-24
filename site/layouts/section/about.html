@@ -1,10 +1,23 @@
 {{ define "main" }}
 {{ partial "jumbotron-text" (dict "title" .Title) }}
+<div id="top"></div>
+{{ if .Params.circumstances }}
+<ul class="content-nav">
+    <li><a href="#活動目的">目的</a></li>
+    <li><a href="#活動趣意書">趣意書</a></li>
+    <li><a href="#活動概要">概要</a></li>
+    <li><a href="#活動経緯">経緯</a></li>
+    <li><a href="#理事">理事</a></li>
+    <li><a href="#連絡先">連絡先</a></li>
+    <li><a href="/about/member">会員について</a></li>
+    <li><a href="/about/org">組織について</a></li>
+</ul>
+{{ end }}
 <section class="markdown">
     {{ .Content }}
 
     {{ if .Params.circumstances }}
-    <h2 class="content-header">活動経緯</h2>
+    <h2 id="活動経緯" class="content-header">活動経緯</h2>
     <ul class="information content">
         {{ range .Params.circumstances }}
         <li class="circumstance-data">
@@ -20,7 +33,7 @@
     {{ end }}
 
     {{ if .Params.directors }}
-    <h2 class="content-header">理事</h2>
+    <h2 id="理事" class="content-header">理事</h2>
     <ul class="information content">
         {{ range .Params.directors }}
         <li class="director-data">
@@ -43,7 +56,7 @@
     {{ end }}
 
     {{ if .Params.contact }}
-    <h2 class="content-header">連絡先</h2>
+    <h2 id="連絡先" class="content-header">連絡先</h2>
     <ul class="information content">
     {{ with .Params.contact }}
     <li class="contact-data"><div class="contact-label">担当</div><div class="contact-value">{{ .staff }}</div></li>
@@ -55,4 +68,7 @@
     </ul>
     {{ end }}
 </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jump.js/1.0.2/jump.min.js" integrity="sha512-Q9CUUoQ/LaD+X7jk76kM6swUEc8q0YPGBcH/Lflux+JatH8zIZPkIb0b91NW5ASgy9ENLhTzt2Z/zZ6yyake2w==" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<div id="page_top" onclick="Jump('#top')"></div>
 {{ end }}
