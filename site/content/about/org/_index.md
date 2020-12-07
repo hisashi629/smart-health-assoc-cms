@@ -18,6 +18,7 @@ advisors:
   - name: 柳井　理沙　（株式会社Uh-m）
   - name: 山浦　克典　（慶応義塾大学薬学部医療薬学・社会連携センター社会薬学部門　教授）
   - name: 若子　直也　（立憲民主党　福岡第５区　総支部長）
+  - name: 藤田　博正　（公益財団法人　北海道対がん協会）
 contact:
   address: 東京都台東区上野3-7-3　SDビル2階
   email: office@shca.or.jp
