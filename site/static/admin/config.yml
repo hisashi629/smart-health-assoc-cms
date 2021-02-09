@@ -92,6 +92,16 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: "内容", name: "body", widget: "markdown", buttons: ["heading-two", "bold", "italic", "link", "bulleted-list", "numbered-list"]}
+      - file: "site/content/spot/_index.md"
+        label: "健康応援スポット"
+        name: "spot"
+        fields:
+          - {label: Title, name: title, widget: string}
+      - file: "site/content/elearning/_index.md"
+        label: "管理者研修会（e-learning）"
+        name: "elearning"
+        fields:
+          - {label: Title, name: title, widget: string}
   - name: "about"
     label: "About"
     files:
