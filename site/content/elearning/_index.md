@@ -26,4 +26,4 @@ image: /img/about.jpg
 今だからこそ、地域住民・患者から選ばれる薬剤師・薬局になるための一歩、踏み出しませんか。\
 
 ## e-learningの受講申込
-[全事業](https://docs.google.com/forms/d/e/1FAIpQLSfp93_c-pK5rKef2mkaI-fvUjpEkfZ5pwX81yZjCtDrCWZ61w/viewform?fbzx=4826799583872136068)
+[全科コース（全事業）](https://docs.google.com/forms/d/e/1FAIpQLSfQIU5a1faqB2ejnEI0zD5Lt9aF0qn4pxV-_HxukT3bjRRx-Q/viewform)
