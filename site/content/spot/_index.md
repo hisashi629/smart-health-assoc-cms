@@ -32,3 +32,7 @@ image: /img/about.jpg
 
 まずは、e-learning（管理者研修）を[お申込み](https://docs.google.com/forms/d/e/1FAIpQLSfQIU5a1faqB2ejnEI0zD5Lt9aF0qn4pxV-_HxukT3bjRRx-Q/viewform)ください。\
 管理者研修については[こちら](/elearning)をご覧ください。
+
+## 参考資料
+- [施設認証規約](https://drive.google.com/drive/u/0/folders/1ofvLMZmK--sQm89f4kQ3Fu0wKp2_ljPW)
+- [FAQ](https://drive.google.com/file/d/1C9cAgWDQKfxn1VI064JCEbujuBpjd1ho/view)

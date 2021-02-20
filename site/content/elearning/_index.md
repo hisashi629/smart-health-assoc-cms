@@ -33,3 +33,16 @@ e-learning内で、動画視聴、確認問題、ロールプレイ、レポー�
 ## 受講申込
 今だからこそ、地域住民・患者から選ばれる薬剤師・薬局になるための一歩、踏み出しませんか。\
 [全科コース（全事業）](https://docs.google.com/forms/d/e/1FAIpQLSfQIU5a1faqB2ejnEI0zD5Lt9aF0qn4pxV-_HxukT3bjRRx-Q/viewform)
+
+## 参考資料
+- [施設認証規約](https://drive.google.com/file/d/14jnmJ65kTRVC_rbFNwvi2ekKYklkUUvv/view)
+- [管理者研修規約](https://drive.google.com/file/d/1h2F-uDs4nOVjEz72dzvhmBXFr6oksj4W/view)
+- [カリキュラム](https://drive.google.com/file/d/16UuaHvERRGsgQxXgjK-gmySFmm-Kv9Dj/view)
+- [スケジュール](https://drive.google.com/file/d/1C7xpkjm8hIEwxOFEAV4pqV0eW_p8TyoC/view)
+- [FAQ](https://drive.google.com/file/d/1C9cAgWDQKfxn1VI064JCEbujuBpjd1ho/view)
+
+
+
+
+
+
