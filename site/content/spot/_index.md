@@ -34,5 +34,5 @@ image: /img/about.jpg
 管理者研修については[こちら](/elearning)をご覧ください。
 
 ## 参考資料
-- [施設認証規約](https://drive.google.com/drive/u/0/folders/1ofvLMZmK--sQm89f4kQ3Fu0wKp2_ljPW)
+- [施設認証規約](https://drive.google.com/file/d/14jnmJ65kTRVC_rbFNwvi2ekKYklkUUvv/view?usp=sharing)
 - [FAQ](https://drive.google.com/file/d/1C9cAgWDQKfxn1VI064JCEbujuBpjd1ho/view)
