@@ -4,9 +4,6 @@ cooperation_members:
   - banner: /img/omron-logo.jpg
     name: オムロンヘルスケア株式会社
     url: 'http://www.healthcare.omron.co.jp/'
-  - banner: /img/selmesta-logo.jpg
-    name: 株式会社セルメスタ
-    url: 'http://www.selmesta.com/'
   - banner: /img/nihonkenpo-logo.gif
     name: 日本健保株式会社
     url: 'http://www.nihonkenpo.jp/'
